@@ -84,7 +84,10 @@ public class OperationActivity extends AppCompatActivity implements Observer {
             @Override
             public void onClick(View view) {
                 if (currentPage != 0) {
-                    currentPage--;
+                    if(currentPage != 4)
+                        currentPage--;
+                    else
+                        currentPage = currentPage - 2;
                     changePage(currentPage);
                 } else {
                     finish();
@@ -103,7 +106,8 @@ public class OperationActivity extends AppCompatActivity implements Observer {
                 getString(R.string.characteristic_list),
                 getString(R.string.console),
                 "手动操作",
-                "自动导航"
+                "导航与建图"
+
         };
     }
 

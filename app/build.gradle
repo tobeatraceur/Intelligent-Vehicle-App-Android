@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.clj.blesample"
-        minSdkVersion 14
+        minSdkVersion 23
         targetSdkVersion 27
         versionCode 232
         versionName "2.3.2"
